@@ -1,0 +1,59 @@
+name: Linkareer Watcher
+
+on:
+  schedule:
+    # Every hour at minute 17 (off-the-hour to avoid GitHub's load spikes at :00)
+    - cron: "17 * * * *"
+  workflow_dispatch:  # allow manual runs from the Actions tab
+
+# Prevent overlapping runs if a previous one is slow
+concurrency:
+  group: linkareer-watcher
+  cancel-in-progress: false
+
+permissions:
+  contents: write  # needed to push CSV updates back to the repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scraper.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "linkareer-watcher-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add postings.csv seen_ids.json images/ debug_last_page.html 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: $(date -u +'%Y-%m-%dT%H:%MZ') update"
+            git push
+          fi
+
+      - name: Upload debug snapshot if scrape failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-snapshot-${{ github.run_id }}
+          path: debug_last_page.html
+          if-no-files-found: ignore
+          retention-days: 7
