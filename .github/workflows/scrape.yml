@@ -41,7 +41,8 @@ jobs:
         run: |
           git config user.name "linkareer-watcher-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add postings.csv postings.json seen_ids.json images/ debug_last_page.html 2>/dev/null || true
+          git add postings.csv postings.json seen_ids.json images/ 2>/dev/null || true
+          [ -f debug_last_page.html ] && git add debug_last_page.html || true
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
