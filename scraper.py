@@ -54,6 +54,7 @@ LISTING_URL = (
 CSV_PATH = Path("postings.csv")
 SEEN_PATH = Path("seen_ids.json")
 IMAGES_DIR = Path("images")
+SNAPSHOT_PATH = Path("postings.json")  # live snapshot consumed by the GitHub Pages frontend
 
 # How many detail-page fetches to run in parallel
 DETAIL_CONCURRENCY = 5
@@ -212,6 +213,53 @@ async def fetch_listing_ids(client: httpx.AsyncClient) -> list[str]:
             await asyncio.sleep(wait)
 
     raise RuntimeError(f"listing fetch failed: {last_exc}")
+
+
+async def fetch_all_open_ids(client: httpx.AsyncClient) -> list[str]:
+    """Paginate through every page of the OPEN listing and return all IDs.
+
+    Used to build the live snapshot for the frontend — we want every currently
+    active posting, not just page 1.
+    """
+    page = 1
+    all_ids: list[str] = []
+    seen: set[str] = set()
+    while page <= 30:  # safety cap
+        url = re.sub(r"page=\d+", f"page={page}", LISTING_URL)
+        try:
+            await asyncio.sleep(random.uniform(0.3, 0.7))
+            resp = await client.get(url, headers=_browser_headers())
+            resp.raise_for_status()
+            state = _parse_next_data(resp.text)["props"]["pageProps"]["__APOLLO_STATE__"]
+        except Exception as exc:
+            print(f"[warn] snapshot page {page} failed: {exc}", flush=True)
+            break
+
+        recent_query = None
+        for k, v in state.get("ROOT_QUERY", {}).items():
+            if k.startswith("activities(") and '"field":"RECENT"' in k and isinstance(v, dict):
+                recent_query = v
+                break
+        if not recent_query:
+            break
+
+        ids: list[str] = []
+        for ref in recent_query.get("nodes") or []:
+            if isinstance(ref, dict) and (rk := ref.get("__ref")) and rk.startswith("Activity:"):
+                ids.append(rk.split(":", 1)[1])
+        if not ids:
+            break
+
+        new = [i for i in ids if i not in seen]
+        all_ids.extend(new)
+        seen.update(new)
+
+        total = int(recent_query.get("totalCount") or 0)
+        if len(all_ids) >= total:
+            break
+        page += 1
+
+    return all_ids
 
 
 # --- Detail extraction ------------------------------------------------------
@@ -463,6 +511,49 @@ def append_to_csv(postings: list[Posting]) -> int:
     return len(postings)
 
 
+def load_postings_from_csv() -> dict[str, dict]:
+    """Load every previously-seen posting out of the CSV, keyed by ID.
+
+    Used during snapshot building so we can include older postings that are
+    still active without re-fetching their detail pages.
+    """
+    if not CSV_PATH.exists():
+        return {}
+    out: dict[str, dict] = {}
+    with CSV_PATH.open("r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            pid = row.get("id")
+            if pid:
+                # Coerce numeric fields that csv stores as strings
+                if row.get("view_count"):
+                    try:
+                        row["view_count"] = int(row["view_count"])
+                    except ValueError:
+                        row["view_count"] = 0
+                else:
+                    row["view_count"] = 0
+                out[pid] = row
+    return out
+
+
+def write_snapshot(active: list[dict]) -> None:
+    """Write the live snapshot consumed by the frontend (postings.json)."""
+    SNAPSHOT_PATH.write_text(
+        json.dumps(
+            {
+                "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "filter": "Seoul · 체험형 인턴 · OPEN",
+                "count": len(active),
+                "postings": active,
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
+
+
 # --- Telegram ---------------------------------------------------------------
 
 async def telegram_send_photo(
@@ -563,33 +654,82 @@ async def run() -> int:
         new_ids = [pid for pid in ids if pid not in seen]
         print(f"[info] {len(new_ids)} new postings to fetch", flush=True)
 
-        if not new_ids:
-            print("[info] nothing new; done", flush=True)
-            return 0
-
-        # 3. Detail fetch (concurrent)
         sem = asyncio.Semaphore(DETAIL_CONCURRENCY)
-        results = await asyncio.gather(
-            *(fetch_posting_detail(client, pid, sem) for pid in new_ids),
-            return_exceptions=False,
-        )
-        new_postings = [p for p in results if p is not None]
-        print(f"[info] successfully parsed {len(new_postings)}/{len(new_ids)} detail pages", flush=True)
+        new_postings: list[Posting] = []
 
-        if new_postings:
-            # 4. CSV first — losing notifications is fine, losing data is not
-            append_to_csv(new_postings)
-            print(f"[info] appended {len(new_postings)} rows to {CSV_PATH}", flush=True)
+        if new_ids:
+            # 3. Detail fetch (concurrent)
+            results = await asyncio.gather(
+                *(fetch_posting_detail(client, pid, sem) for pid in new_ids),
+                return_exceptions=False,
+            )
+            new_postings = [p for p in results if p is not None]
+            print(f"[info] successfully parsed {len(new_postings)}/{len(new_ids)} detail pages", flush=True)
 
-            # 5. Notify
-            await notify_postings(client, new_postings)
+            if new_postings:
+                # 4. CSV first — losing notifications is fine, losing data is not
+                append_to_csv(new_postings)
+                print(f"[info] appended {len(new_postings)} rows to {CSV_PATH}", flush=True)
+
+                # 5. Notify
+                await notify_postings(client, new_postings)
 
         # 6. Update seen with everything we observed (even fetch-failures, so we don't retry forever)
         seen.update(ids)
         save_seen_ids(seen)
 
+        # 7. Build live snapshot for the frontend — runs every time so closed
+        #    postings drop off and freshly-listed ones appear on the site
+        await build_snapshot(client, new_postings, sem)
+
     print("[info] done", flush=True)
     return 0
+
+
+async def build_snapshot(
+    client: httpx.AsyncClient,
+    just_fetched: list[Posting],
+    sem: asyncio.Semaphore,
+) -> None:
+    """Refresh postings.json — every currently-OPEN posting with full metadata.
+
+    Strategy:
+      1. Paginate the OPEN listing → all currently-active IDs
+      2. Look each ID up in the CSV cache + the postings we just fetched
+      3. Any remaining unknowns (e.g. older postings we never saw because we
+         only ever fetched page 1) get a one-time backfill detail fetch
+      4. Write postings.json in listing (RECENT-DESC) order
+    """
+    try:
+        all_open_ids = await fetch_all_open_ids(client)
+    except Exception as exc:
+        print(f"[warn] snapshot pagination failed: {exc}", flush=True)
+        return
+    print(f"[info] {len(all_open_ids)} currently-open postings", flush=True)
+    if not all_open_ids:
+        return
+
+    cached = load_postings_from_csv()
+    for p in just_fetched:
+        cached[p.id] = asdict(p)
+
+    missing = [pid for pid in all_open_ids if pid not in cached]
+    if missing:
+        print(f"[info] backfilling {len(missing)} postings missing from cache", flush=True)
+        extras = await asyncio.gather(
+            *(fetch_posting_detail(client, pid, sem) for pid in missing),
+            return_exceptions=False,
+        )
+        backfilled = [p for p in extras if p is not None]
+        if backfilled:
+            append_to_csv(backfilled)
+            for p in backfilled:
+                cached[p.id] = asdict(p)
+            print(f"[info] backfilled {len(backfilled)}/{len(missing)} → CSV", flush=True)
+
+    snapshot = [cached[pid] for pid in all_open_ids if pid in cached]
+    write_snapshot(snapshot)
+    print(f"[info] wrote {SNAPSHOT_PATH} with {len(snapshot)} active postings", flush=True)
 
 
 if __name__ == "__main__":
