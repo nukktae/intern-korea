@@ -343,6 +343,38 @@
   .card-badge.urgent {
     background: var(--accent);
   }
+  /* Preference tier badges */
+  .card-badge.pref-ai {
+    background: var(--accent);
+    box-shadow: 0 0 0 1px rgba(199, 93, 44, 0.25);
+  }
+  .card-badge.pref-design {
+    background: rgba(26, 26, 24, 0.92);
+    color: #E8B89E;
+  }
+  .card-badge.pref-eng {
+    background: rgba(26, 26, 24, 0.92);
+  }
+  .card-badge.pref-mkt {
+    background: rgba(26, 26, 24, 0.85);
+    color: #D8D5C9;
+  }
+
+  /* Subtle treatment for AI tier card itself */
+  .card.tier-1::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--accent);
+    z-index: 4;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.5s var(--ease);
+  }
+  .card.tier-1 { animation-delay: calc(var(--i, 0) * 22ms); }
+  .card.tier-1::before { transform: scaleY(1); }
 
   .card-body {
     padding: 16px 16px 18px;
@@ -1071,6 +1103,9 @@
 
 <div class="controls">
   <div class="controls-row">
+    <div class="filter-group" id="prefFilters">
+      <span class="filter-label">관심사</span>
+    </div>
     <div class="filter-group" id="orgFilters">
       <span class="filter-label">기업</span>
     </div>
@@ -1082,6 +1117,7 @@
       <input type="search" id="searchInput" placeholder="제목 · 회사 · 주소 검색…" />
     </div>
     <select class="sort-select" id="sortSelect">
+      <option value="recommended">추천순</option>
       <option value="recent">최신순</option>
       <option value="deadline">마감 임박순</option>
       <option value="views">조회수순</option>
@@ -1183,12 +1219,62 @@ const state = {
     deadlineWithinDays: null,
     keyword: null,
   },
-  sort: 'recent',
+  sort: 'recommended',
+  prefTier: null,  // 1..5 or null for all
   hidden: loadHidden(),
   selectMode: false,
   selected: new Set(),
   lastDeleted: null,  // { ids: [...], timeoutId }
 };
+
+// ===== PREFERENCES =====
+// Tier order matches user priorities. Each posting falls into the FIRST matching tier.
+const PREF_TIERS = [
+  { tier: 1, id: 'ai',     label: 'AI',         badgeClass: 'pref-ai' },
+  { tier: 2, id: 'design', label: 'DESIGN',     badgeClass: 'pref-design' },
+  { tier: 3, id: 'eng',    label: 'ENG',        badgeClass: 'pref-eng' },
+  { tier: 4, id: 'mkt',    label: 'GLOBAL MKT', badgeClass: 'pref-mkt' },
+  { tier: 5, id: 'other',  label: '',           badgeClass: '' },
+];
+const PREF_BY_ID = Object.fromEntries(PREF_TIERS.map(p => [p.id, p]));
+
+function preferenceFor(p) {
+  // Match on TITLE only — description text picks up too many false positives
+  // (companies casually mentioning "AI" etc. in unrelated JDs).
+  const t = (p.title || '').toLowerCase();
+  const en = (...words) => new RegExp('(?:^|[^a-z0-9])(?:' + words.join('|') + ')(?:[^a-z0-9]|$)');
+
+  // Tier 1: AI / GenAI / Agentic
+  if (
+    en('ai', 'llm', 'gpt', 'genai', 'agentic', 'mlops', 'nlp', 'rag').test(t) ||
+    /인공지능|머신러닝|딥러닝|생성형\s*ai|ai\s*에이전트|에이전틱\s*ai|ai\s*엔지니어|ai\s*인턴/.test(t)
+  ) {
+    return PREF_BY_ID.ai;
+  }
+
+  // Tier 2: UI/UX Design
+  if (
+    en('ui', 'ux', 'designer').test(t) ||
+    /디자이너|디자인\s*인턴|프로덕트\s*디자|브랜드\s*디자|시각\s*디자|웹\s*디자|콘텐츠\s*디자/.test(t)
+  ) {
+    return PREF_BY_ID.design;
+  }
+
+  // Tier 3: Software Engineer
+  if (
+    en('developer', 'engineer', 'frontend', 'backend', 'fullstack', 'devops', 'sre', 'ios', 'android', 'qa', 'swe').test(t) ||
+    /개발자|엔지니어|프론트엔드|백엔드|풀스택|모바일\s*앱|소프트웨어\s*개발|서버\s*개발|웹\s*개발/.test(t)
+  ) {
+    return PREF_BY_ID.eng;
+  }
+
+  // Tier 4: Global Marketing — must mention BOTH marketing-ish AND global-ish in title
+  const isMkt = /마케팅|마케터|brand|marketing|marketer|광고|크리에이티브/.test(t);
+  const isGlobal = /글로벌|해외|global|overseas|international/.test(t);
+  if (isMkt && isGlobal) return PREF_BY_ID.mkt;
+
+  return PREF_BY_ID.other;
+}
 
 // ===== HELPERS =====
 const $ = (s, ctx = document) => ctx.querySelector(s);
@@ -1223,6 +1309,7 @@ async function load() {
       ...p,
       _imageOk: !!p.description_image_local,
       _days: daysUntil(p.recruit_close_at),
+      _pref: preferenceFor(p),
     }));
     $('#totalCount').innerHTML = `<em>${data.count}</em>`;
     const fetchedAt = new Date(data.fetched_at);
@@ -1241,9 +1328,21 @@ async function load() {
 function buildFilters() {
   const orgTypes = {};
   const applyTypes = {};
+  const prefCounts = { ai: 0, design: 0, eng: 0, mkt: 0, other: 0 };
   state.postings.forEach(p => {
     if (p.organization_type) orgTypes[p.organization_type] = (orgTypes[p.organization_type] || 0) + 1;
     if (p.apply_type) applyTypes[p.apply_type] = (applyTypes[p.apply_type] || 0) + 1;
+    prefCounts[p._pref.id]++;
+  });
+
+  // Preference chips (관심사) — first priority filter
+  const prefLabels = { ai: 'AI', design: '디자인', eng: '개발', mkt: '글로벌 마케팅', other: '기타' };
+  const prefWrap = $('#prefFilters');
+  prefWrap.appendChild(makePrefChip('전체', null, state.postings.length, true));
+  PREF_TIERS.forEach(t => {
+    if (prefCounts[t.id] > 0) {
+      prefWrap.appendChild(makePrefChip(prefLabels[t.id], t.tier, prefCounts[t.id]));
+    }
   });
 
   const orgOrder = ['대기업', '중견기업', '중소기업', '스타트업', '외국계기업', '공공기관/공기업', '비영리단체/협회/재단', '기타'];
@@ -1257,6 +1356,23 @@ function buildFilters() {
   const applyWrap = $('#applyFilters');
   applyWrap.appendChild(makeChip('전체', null, state.postings.length, 'applyType', true));
   applyEntries.forEach(([a, c]) => applyWrap.appendChild(makeChip(a, a, c, 'applyType')));
+}
+
+function makePrefChip(label, tier, count, active = false) {
+  const b = document.createElement('button');
+  b.className = 'chip' + (active ? ' active' : '');
+  b.dataset.tier = tier == null ? '' : String(tier);
+  // Tier 1 (AI) chip gets a subtle accent dot to draw the eye
+  const dot = tier === 1 ? '<span style="display:inline-block;width:5px;height:5px;background:var(--accent);border-radius:50%;margin-right:6px;vertical-align:middle;"></span>' : '';
+  b.innerHTML = `${dot}${label}<span class="ct">${count}</span>`;
+  b.addEventListener('click', () => {
+    const group = b.parentElement;
+    $$('.chip', group).forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    state.prefTier = tier;
+    apply();
+  });
+  return b;
 }
 
 function makeChip(label, value, count, key, active = false) {
@@ -1289,6 +1405,7 @@ function apply() {
   const f = state.filters;
   let arr = state.postings.filter(p => {
     if (state.hidden.has(p.id)) return false;
+    if (state.prefTier != null && p._pref.tier !== state.prefTier) return false;
     if (f.orgType && p.organization_type !== f.orgType) return false;
     if (f.applyType && p.apply_type !== f.applyType) return false;
     if (f.deadlineWithinDays != null) {
@@ -1308,20 +1425,29 @@ function apply() {
   });
 
   // sort
+  const byDeadline = (a, b) => {
+    const ad = a._days, bd = b._days;
+    if (ad == null && bd == null) return 0;
+    if (ad == null) return 1;
+    if (bd == null) return -1;
+    if (ad < 0 && bd >= 0) return 1;
+    if (bd < 0 && ad >= 0) return -1;
+    return ad - bd;
+  };
+  const byRecent = (a, b) => parseInt(b.id) - parseInt(a.id);
+
   if (state.sort === 'deadline') {
-    arr.sort((a, b) => {
-      const ad = a._days, bd = b._days;
-      if (ad == null && bd == null) return 0;
-      if (ad == null) return 1;
-      if (bd == null) return -1;
-      if (ad < 0 && bd >= 0) return 1;
-      if (bd < 0 && ad >= 0) return -1;
-      return ad - bd;
-    });
+    arr.sort(byDeadline);
   } else if (state.sort === 'views') {
     arr.sort((a, b) => (b.view_count || 0) - (a.view_count || 0));
+  } else if (state.sort === 'recent') {
+    arr.sort(byRecent);
   } else {
-    arr.sort((a, b) => parseInt(b.id) - parseInt(a.id));
+    // recommended: tier ASC (1=AI first), then most-recent within same tier
+    arr.sort((a, b) => {
+      if (a._pref.tier !== b._pref.tier) return a._pref.tier - b._pref.tier;
+      return byRecent(a, b);
+    });
   }
 
   state.filtered = arr;
@@ -1332,12 +1458,16 @@ function apply() {
 function updateFilterDesc() {
   const f = state.filters;
   const parts = [];
+  if (state.prefTier != null) {
+    const t = PREF_TIERS.find(x => x.tier === state.prefTier);
+    if (t) parts.push(t.label || 'OTHER');
+  }
   if (f.orgType) parts.push(f.orgType);
   if (f.applyType) parts.push(f.applyType);
   if (f.keyword) parts.push(`"${f.keyword}"`);
   if (f.deadlineWithinDays != null) parts.push(`${f.deadlineWithinDays}일 이내 마감`);
   if (f.search) parts.push(`검색: "${f.search}"`);
-  $('#filterDesc').textContent = parts.length ? parts.join(' · ') : 'all postings';
+  $('#filterDesc').textContent = parts.length ? parts.join(' · ') : (state.sort === 'recommended' ? 'sorted by your preferences' : 'all postings');
 }
 
 // ===== RENDER =====
@@ -1352,7 +1482,7 @@ function render() {
   const frag = document.createDocumentFragment();
   state.filtered.forEach((p, i) => {
     const c = document.createElement('article');
-    c.className = 'card';
+    c.className = 'card tier-' + p._pref.tier;
     c.style.setProperty('--i', Math.min(i, 30));
 
     const dl = deadlineLabel(p);
@@ -1369,6 +1499,10 @@ function render() {
     }
 
     const badges = [];
+    // category badge first (most important visual signal)
+    if (p._pref.label) {
+      badges.push(`<span class="card-badge ${p._pref.badgeClass}">${p._pref.label}</span>`);
+    }
     if (urgent) badges.push(`<span class="card-badge urgent">${escapeHTML(dl)}</span>`);
     else if (isNew) badges.push(`<span class="card-badge">NEW</span>`);
 
