@@ -841,6 +841,212 @@
     .assistant-fab { right: 16px; bottom: 16px; }
   }
 
+  /* ───────────────── DELETE / SELECT ───────────────── */
+  .card-delete {
+    position: absolute;
+    top: 8px; right: 8px;
+    width: 26px; height: 26px;
+    background: rgba(250, 250, 247, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.25s var(--ease);
+    z-index: 3;
+    cursor: pointer;
+  }
+  .card:hover .card-delete { opacity: 1; transform: scale(1); }
+  .card-delete:hover {
+    background: var(--accent);
+    color: var(--paper);
+    border-color: var(--accent);
+    transform: scale(1.1);
+  }
+  .card-delete svg { width: 11px; height: 11px; }
+
+  .card-checkbox {
+    position: absolute;
+    top: 10px; right: 10px;
+    width: 22px; height: 22px;
+    background: rgba(250, 250, 247, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1.5px solid var(--ink);
+    border-radius: 4px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    transition: all 0.2s var(--ease);
+    cursor: pointer;
+  }
+  body.select-mode .card-checkbox { display: flex; }
+  body.select-mode .card-delete { display: none; }
+  .card-checkbox.checked { background: var(--ink); }
+  .card-checkbox.checked::after {
+    content: '';
+    width: 5px; height: 9px;
+    border: solid var(--paper);
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  body.select-mode .card.selected {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+  body.select-mode .card.selected .card-checkbox {
+    border-color: var(--ink);
+  }
+
+  /* card removal animation */
+  .card.removing {
+    animation: card-out 0.45s var(--ease) forwards;
+    pointer-events: none;
+  }
+  @keyframes card-out {
+    to { opacity: 0; transform: scale(0.92) translateY(-8px); }
+  }
+
+  /* select toggle in controls */
+  .select-toggle {
+    padding: 8px 14px;
+    background: var(--paper-2);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    font: inherit;
+    font-size: 12px;
+    color: var(--ink-soft);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.25s var(--ease);
+    white-space: nowrap;
+  }
+  .select-toggle:hover { background: var(--ink); color: var(--paper); }
+  .select-toggle.active { background: var(--ink); color: var(--paper); }
+  .select-toggle svg { width: 11px; height: 11px; }
+
+  /* bottom action bar */
+  .action-bar {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(120px);
+    background: var(--ink);
+    color: var(--paper);
+    padding: 10px 12px 10px 22px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    z-index: 95;
+    box-shadow: 0 16px 50px -12px rgba(26, 26, 24, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s var(--ease-2);
+  }
+  body.select-mode .action-bar {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .action-bar .count {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 300;
+    font-variant-numeric: tabular-nums;
+  }
+  .action-bar .count em { color: var(--accent-soft); font-style: normal; font-family: var(--mono); font-size: 14px; margin-right: 4px; }
+  .action-bar .sep {
+    width: 1px; height: 18px;
+    background: rgba(250, 250, 247, 0.18);
+  }
+  .action-bar button {
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-family: var(--sans);
+    transition: all 0.25s var(--ease);
+  }
+  .action-bar .delete {
+    background: var(--accent);
+    color: var(--paper);
+    font-weight: 500;
+  }
+  .action-bar .delete:hover { background: #d8754a; }
+  .action-bar .delete:disabled { opacity: 0.35; cursor: not-allowed; background: var(--accent); }
+  .action-bar .cancel { color: rgba(250, 250, 247, 0.65); }
+  .action-bar .cancel:hover { color: var(--paper); }
+
+  /* hidden indicator in results bar */
+  .hidden-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 14px;
+    padding-left: 14px;
+    border-left: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .hidden-indicator button {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .hidden-indicator button:hover { color: var(--ink); }
+  .hidden-indicator.empty { display: none; }
+
+  /* toast */
+  .toast {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--ink);
+    color: var(--paper);
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    z-index: 90;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s var(--ease);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 12px 36px -10px rgba(26, 26, 24, 0.4);
+  }
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+  .toast button {
+    color: var(--accent-soft);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .toast button:hover { color: var(--paper); }
+
   /* selection */
   ::selection { background: var(--accent); color: var(--paper); }
   ::-moz-selection { background: var(--accent); color: var(--paper); }
@@ -880,12 +1086,22 @@
       <option value="deadline">마감 임박순</option>
       <option value="views">조회수순</option>
     </select>
+    <button class="select-toggle" id="selectToggle" type="button">
+      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1" y="1" width="12" height="12" rx="2"/><path d="M4 7l2 2 4-4"/></svg>
+      <span id="selectToggleLabel">선택</span>
+    </button>
   </div>
 </div>
 
 <main>
   <div class="results-bar">
-    <div class="results-count"><strong id="visibleCount">0</strong>개의 공고</div>
+    <div class="results-count">
+      <strong id="visibleCount">0</strong>개의 공고
+      <span class="hidden-indicator empty" id="hiddenIndicator">
+        <span id="hiddenLabel">0 hidden</span>
+        <button id="restoreBtn" type="button">복원</button>
+      </span>
+    </div>
     <div class="results-meta" id="filterDesc">—</div>
   </div>
   <div class="grid" id="grid"></div>
@@ -907,6 +1123,20 @@
   </div>
   <div class="drawer-content" id="drawerContent"></div>
 </aside>
+
+<!-- Bulk action bar (only visible in select mode) -->
+<div class="action-bar" id="actionBar">
+  <span class="count"><em id="selectedCount">0</em>개 선택됨</span>
+  <span class="sep"></span>
+  <button class="delete" id="deleteSelected" disabled>삭제</button>
+  <button class="cancel" id="cancelSelect">취소</button>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <span id="toastText"></span>
+  <button id="toastUndo">실행 취소</button>
+</div>
 
 <!-- Assistant FAB -->
 <button class="assistant-fab" id="assistantFab">
@@ -934,6 +1164,15 @@
 
 <script>
 // ===== STATE =====
+const HIDDEN_KEY = 'internseoul:hidden';
+function loadHidden() {
+  try { return new Set(JSON.parse(localStorage.getItem(HIDDEN_KEY) || '[]')); }
+  catch { return new Set(); }
+}
+function saveHidden(set) {
+  localStorage.setItem(HIDDEN_KEY, JSON.stringify([...set]));
+}
+
 const state = {
   postings: [],
   filtered: [],
@@ -945,6 +1184,10 @@ const state = {
     keyword: null,
   },
   sort: 'recent',
+  hidden: loadHidden(),
+  selectMode: false,
+  selected: new Set(),
+  lastDeleted: null,  // { ids: [...], timeoutId }
 };
 
 // ===== HELPERS =====
@@ -986,6 +1229,7 @@ async function load() {
     $('#syncedAt').textContent = `synced ${fetchedAt.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}`;
     buildFilters();
     apply();
+    updateHiddenIndicator();
     initAssistantWelcome();
   } catch (e) {
     $('#grid').innerHTML = `<div class="empty">데이터를 불러오는 중입니다. <br><span style="font-size:13px;color:var(--muted);">첫 번째 cron 실행이 완료되면 자동으로 표시됩니다.</span></div>`;
@@ -1044,6 +1288,7 @@ $('#sortSelect').addEventListener('change', e => {
 function apply() {
   const f = state.filters;
   let arr = state.postings.filter(p => {
+    if (state.hidden.has(p.id)) return false;
     if (f.orgType && p.organization_type !== f.orgType) return false;
     if (f.applyType && p.apply_type !== f.applyType) return false;
     if (f.deadlineWithinDays != null) {
@@ -1127,9 +1372,14 @@ function render() {
     if (urgent) badges.push(`<span class="card-badge urgent">${escapeHTML(dl)}</span>`);
     else if (isNew) badges.push(`<span class="card-badge">NEW</span>`);
 
+    c.dataset.id = p.id;
     c.innerHTML = `
       ${imgHTML}
       ${badges.length ? `<div class="card-badges">${badges.join('')}</div>` : ''}
+      <button class="card-delete" type="button" aria-label="숨기기" title="이 공고 숨기기">
+        <svg viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1.5 1.5l8 8M9.5 1.5l-8 8"/></svg>
+      </button>
+      <div class="card-checkbox" aria-label="선택"></div>
       <div class="card-body">
         <div class="card-org">
           <span>${escapeHTML(p.organization || '—')}</span>
@@ -1142,10 +1392,147 @@ function render() {
         </div>
       </div>
     `;
-    c.addEventListener('click', () => openDrawer(p));
+    c.addEventListener('click', e => {
+      // delete button
+      if (e.target.closest('.card-delete')) {
+        e.stopPropagation();
+        hidePostings([p.id], c);
+        return;
+      }
+      // select mode → toggle selection
+      if (state.selectMode) {
+        e.stopPropagation();
+        toggleSelection(p.id, c);
+        return;
+      }
+      // default → open drawer
+      openDrawer(p);
+    });
     frag.appendChild(c);
   });
   grid.appendChild(frag);
+}
+
+// ===== HIDE / SELECT / RESTORE =====
+
+function hidePostings(ids, cardEl = null) {
+  // animate out the card(s) before removing from DOM
+  const cards = cardEl ? [cardEl] : ids.map(id => $(`.card[data-id="${id}"]`)).filter(Boolean);
+  cards.forEach(c => c.classList.add('removing'));
+
+  setTimeout(() => {
+    ids.forEach(id => state.hidden.add(id));
+    saveHidden(state.hidden);
+    apply();
+    updateHiddenIndicator();
+  }, 380);
+
+  // remember for undo
+  state.lastDeleted = { ids: [...ids] };
+  showToast(
+    ids.length === 1 ? '공고를 숨겼습니다' : `${ids.length}개 공고를 숨겼습니다`,
+    () => undoHide(ids),
+  );
+}
+
+function undoHide(ids) {
+  ids.forEach(id => state.hidden.delete(id));
+  saveHidden(state.hidden);
+  apply();
+  updateHiddenIndicator();
+  hideToast();
+}
+
+function restoreAll() {
+  if (state.hidden.size === 0) return;
+  if (!confirm(`숨긴 ${state.hidden.size}개 공고를 모두 복원하시겠습니까?`)) return;
+  state.hidden.clear();
+  saveHidden(state.hidden);
+  apply();
+  updateHiddenIndicator();
+}
+
+function updateHiddenIndicator() {
+  const ind = $('#hiddenIndicator');
+  const n = state.hidden.size;
+  if (n === 0) {
+    ind.classList.add('empty');
+  } else {
+    ind.classList.remove('empty');
+    $('#hiddenLabel').textContent = `${n} hidden`;
+  }
+}
+
+// --- Select mode ---
+function enterSelectMode() {
+  state.selectMode = true;
+  state.selected.clear();
+  document.body.classList.add('select-mode');
+  $('#selectToggle').classList.add('active');
+  $('#selectToggleLabel').textContent = '선택 종료';
+  updateActionBar();
+}
+function exitSelectMode() {
+  state.selectMode = false;
+  state.selected.clear();
+  document.body.classList.remove('select-mode');
+  $('#selectToggle').classList.remove('active');
+  $('#selectToggleLabel').textContent = '선택';
+  $$('.card.selected').forEach(c => c.classList.remove('selected'));
+  $$('.card-checkbox.checked').forEach(c => c.classList.remove('checked'));
+  updateActionBar();
+}
+function toggleSelection(id, cardEl) {
+  if (state.selected.has(id)) {
+    state.selected.delete(id);
+    cardEl.classList.remove('selected');
+    cardEl.querySelector('.card-checkbox').classList.remove('checked');
+  } else {
+    state.selected.add(id);
+    cardEl.classList.add('selected');
+    cardEl.querySelector('.card-checkbox').classList.add('checked');
+  }
+  updateActionBar();
+}
+function updateActionBar() {
+  const n = state.selected.size;
+  $('#selectedCount').textContent = n;
+  $('#deleteSelected').disabled = n === 0;
+}
+
+$('#selectToggle').addEventListener('click', () => {
+  if (state.selectMode) exitSelectMode();
+  else enterSelectMode();
+});
+$('#cancelSelect').addEventListener('click', exitSelectMode);
+$('#deleteSelected').addEventListener('click', () => {
+  if (state.selected.size === 0) return;
+  const ids = [...state.selected];
+  exitSelectMode();
+  hidePostings(ids);
+});
+$('#restoreBtn').addEventListener('click', restoreAll);
+
+// --- Toast ---
+let toastTimer = null;
+function showToast(text, undoFn) {
+  const toast = $('#toast');
+  $('#toastText').textContent = text;
+  const undoBtn = $('#toastUndo');
+  if (undoFn) {
+    undoBtn.style.display = '';
+    undoBtn.onclick = undoFn;
+  } else {
+    undoBtn.style.display = 'none';
+  }
+  toast.classList.add('show');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(hideToast, 5000);
+}
+function hideToast() {
+  $('#toast').classList.remove('show');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = null;
 }
 
 // ===== DRAWER =====
@@ -1207,7 +1594,14 @@ function closeDrawer() {
 }
 $('#drawerClose').addEventListener('click', closeDrawer);
 $('#drawerBackdrop').addEventListener('click', closeDrawer);
-document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeDrawer(); closeAssistant(); } });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeDrawer();
+    closeAssistant();
+    if (state.selectMode) exitSelectMode();
+    hideToast();
+  }
+});
 
 // ===== ASSISTANT =====
 const fab = $('#assistantFab');
