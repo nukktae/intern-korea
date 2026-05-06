@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-05-05T23:11:35+00:00",
+  "fetched_at": "2026-05-06T00:02:26+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 301,
+  "count": 302,
   "postings": [
     {
       "id": "319550",
@@ -62,6 +62,26 @@
       "description_text": "[뤼튼테크놀리지스] AX Project Manager 인턴\n\n[모집기간]\n채용 시 마감\n\n[담당업무]\n-AX CIC의 Project Manager 인턴은 Project Manager를 보조하여 프로젝트 전반의 관리를 돕게 됩니다. \n-프로젝트 일정관리 및 WBS 기반으로 고객사와의 커뮤니케이션을 보조합니다. \n-사용자 입장에서 성능을 평가하고 개선하기 위한 방안을 도출해 냅니다.\n-필요시 새로운 기술의 PoC 및 기능 기획을 진행합니다.\n-경쟁사 제품 및 기존 솔루션 등을 리서치해서 팀에 리포트합니다.\n\n[지원자격]\n-AI 기술에 대한 이해도가 높으신 분. 만약 부족하더라도, 새로운 지식/기술에 대한 2주 이내 빠른 온보딩에 자신 있으신 분\n-삶에 있어서 일이 정말 중요하신 분\n-빠른 학습 능력을 가지고 있으신 분\n-정확한 소통을 하시는 분\n-높은 업무 강도에 대한 회복 탄력성을 가지신 분\n-기술을 통한 비즈니스 임팩트를 만들어 보신 분\n-데이터 정리 및 리서치 업무를 위한 OA 활용 능력이 우수하신 분\n-OpenAI SDK, Vercel AI SDK 등 LLM 관련 라이브러리를 활용한 어플리케이션 구현 경험이 있으신 분\n\n[우대사항]\n-고객을 직접 인터뷰하고 그들의 니즈를 발굴해낸 경험이 있으신 분\n-정해진 기간안에 고객의 요구사항에 맞춰서 프로젝트를 성공적으로 완수해보신 분\n-Agentic AI를 개발해본 경험이 있으신 분\n-Python에 능숙하신 분\n-Figma를 통한 화면 기획 및 장표작업에 능숙하신 분\n\n[채용공고]\n\nAbout Wrtn ​Technologies ​Inc.뤼튼테크놀로지스는 ​AI로 사람들의 ​삶을 혁신하는 회사입니다.\n\n500만 명이 ​매일 ​사용하는 AI ​플랫폼 뤼튼, 전 ​세계에서 가장 ​빠르게 ​성장하는 AI ​캐릭터 ​서비스 ​크랙, 기업의 업무를 ​재정의하는 ​에이전트를 만드는 AX. ​\n컨슈머와 ​엔터프라이즈에서 ​AI가 여는 기회를 ​실제 사업으로 ​만들어가고 ​있습니다.\n\n이 비전을 ​실현할 수 ​있는 ​뤼튼 팀 만의 ",
       "view_count": 0,
       "discovered_at": "2026-05-04T10:24:32+00:00"
+    },
+    {
+      "id": "319490",
+      "title": "Business Development Intern (체험형)",
+      "organization": "브레이브모바일(숨고)",
+      "organization_type": "스타트업",
+      "detail_url": "https://linkareer.com/activity/319490",
+      "apply_url": "https://soomgo.career.greetinghr.com/ko/o/215152/apply",
+      "apply_type": "접수페이지",
+      "homepage_url": "",
+      "recruit_type": "NORMAL",
+      "recruit_close_at": "2026-05-22T14:59:59+00:00",
+      "salary_info": "회사 내규에 따름",
+      "address": "서울 강남구 테헤란로 133",
+      "description_image_urls": "https://file2.jobkorea.co.kr/Net/Mng/DownImage/CorpEditor?file_No=1704245;https://file2.jobkorea.co.kr/Net/Mng/DownImage/CorpEditor?file_No=1704246",
+      "description_image_local": "images/319490.png",
+      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/828704",
+      "description_text": "",
+      "view_count": 0,
+      "discovered_at": "2026-05-06T00:01:45+00:00"
     },
     {
       "id": "319447",
