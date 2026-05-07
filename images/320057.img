@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>자동 리다이렉트 페이지</title>
+		<script>
+			// 5초 후에 홈페이지로 자동 리다이렉트
+			setTimeout(function() {
+			    window.location.href = 'https://www.careerlink.kr/error';
+			}, 100);
+		</script>
+		<!-- 나머지 스타일 및 태그 -->
+	</head>
+	<body></body>
+</html>
