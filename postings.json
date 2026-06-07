@@ -1,8 +1,28 @@
 {
-  "fetched_at": "2026-06-07T22:17:35+00:00",
+  "fetched_at": "2026-06-07T23:20:45+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 347,
+  "count": 348,
   "postings": [
+    {
+      "id": "326596",
+      "title": "[하나은행] 2026년 체험형 인턴 모집 (~6/15)",
+      "organization": "하나은행",
+      "organization_type": "금융권",
+      "detail_url": "https://linkareer.com/activity/326596",
+      "apply_url": "https://hanabank.incruit.com/main/main.asp",
+      "apply_type": "접수페이지",
+      "homepage_url": "https://www.kebhana.com/",
+      "recruit_type": "NORMAL",
+      "recruit_close_at": "2026-06-15T09:00:59+00:00",
+      "salary_info": "회사 내규에 따름",
+      "address": "서울 중구 을지로 35",
+      "description_image_urls": "https://media-cdn.linkareer.com//se2editor/image/854174",
+      "description_image_local": "images/326596.png",
+      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/854177",
+      "description_text": "[하나은행] 2026년 체험형 인턴 모집 (~6/15) \n\n[모집부문]\n-종합금융\n개인금융, 기업금융, 글로벌, 자산관리 등 본점 부서 및 영업점 OJT\n- AI/ICT\nAI서비스 기획 및 운영, AI모델링, 디지털서비스 기획, 데이터 분석, 클라우드 AI 인프라 운영,\n플랫폼/채널개발, 계정계/코어뱅킹 개발 등 본점 부서 및 영업점 OJT\n\n[접수기간]\n2026.06.05 ~ 2026.06.15 18시\n\n[전형절차]\n서류전형 > 필기전형 > 실무진 면접 전형 > 건강검진 > 인턴십",
+      "view_count": 0,
+      "discovered_at": "2026-06-07T23:19:58+00:00"
+    },
     {
       "id": "326480",
       "title": "[케이시크릿] 미주/유럽 인플루언서 마케팅 체험형 인턴",
