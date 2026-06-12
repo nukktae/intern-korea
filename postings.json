@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-06-12T09:11:34+00:00",
+  "fetched_at": "2026-06-12T12:30:05+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 388,
+  "count": 384,
   "postings": [
     {
       "id": "328192",
@@ -2904,26 +2904,6 @@
       "discovered_at": "2026-06-01T10:31:55+00:00"
     },
     {
-      "id": "325156",
-      "title": "[Kearney Korea] RA(인턴) 모집 공고 (Python, SQL)",
-      "organization": "에이티커니코리아",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/325156",
-      "apply_url": "seoul.recruiting@kearney.com",
-      "apply_type": "이메일",
-      "homepage_url": "https://www.kearney.co.kr",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-29T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 서초구 서초대로 398",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/848878",
-      "description_text": "﻿\nkearney Korea Research Analyst (Intern) 모집 공고\n\n글로벌 경영 전략 컨설팅펌 Kearney Korea에서 Research Analyst를 모집합니다.\n당사는 국내 최대 규모의 전략 컨설팅 회사로 세계적 수준의 전략, 운영 및 테크놀로지 Consulting Service를 제공하고 있습니다.\n\n* 포지션: Research Analyst (Intern) \n* 모집인원: 0명\n* 근무기간: 26. 6. 15 ~ ’26. 09. 30 (프로젝트 상황에 따라 연장 가능)\n ※ 근무 가능 기간을 파일명에 반드시 기재 바랍니다.\n\n■ 필수사항\n- Python, SQL 활용 능력 보유자\n- GCP, AWS 등 클라우드 환경 내 데이터 처리 경험자\n- MS Office 활용 능력 보유자\n- 계약기간 동안 Full-Time 근무 가능자\n\n■ 우대사항 (우대사항에 해당하는 경우, Mail body에 기재 바랍니다.)\n- 대용량 데이터 처리 및 데이터 파이프라인 구축 경험 보유자\n- 데이터 모델링 및 데이터 품질 관리 경험자\n- AI Agent 설계 및 운영 경험\n- 디지털/전략 컨설팅 RA 경험자\n- 영어 능통자\n\n■ 주요업무\n- 데이터 정제(Cleansing) 프로세스 구축\n- ETL 파이프라인 설계 및 운영\n- 웹 크롤러 개발 및 운영\n- 리서치 및 데이터 기반 분석 지원\n\n* 기타사항\n- 남자의 경우, 병역 필 또는 면제자 등\n- 외국 국적자의 경우, 취업 가능 비자 소지한 자\n\n* 채용절차: 서류 전형 및 인터뷰 진행\n* 제출서류 및 방법: 영문 resume (PDF only)를 seoul.recruiting@kearney.com 로 송부\n- 이메일 제목&파일명: “RA_LI_홍길동(본인이름)_mm.dd~mm.dd(근무가능기간)”\n* 제출기한: ASAP, 채용 시 마감\n* 홈페이지: www.kearney.co.kr\n- 문의사항은 이메일(seoul.recruiting@kearney.com)로 주시기 바랍니다.\n- 허위사실이 발견될 경우 ",
-      "view_count": 0,
-      "discovered_at": "2026-06-01T05:16:52+00:00"
-    },
-    {
       "id": "325136",
       "title": "[소크라에이아이] [인턴] 리얼아카데미 프로덕트 매니저 어시스턴트",
       "organization": "소크라에이아이",
@@ -3644,26 +3624,6 @@
       "discovered_at": "2026-05-22T04:35:45+00:00"
     },
     {
-      "id": "323515",
-      "title": "[Kearney Korea] RA(인턴) 모집 공고 (SQL)",
-      "organization": "에이티커니코리아",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/323515",
-      "apply_url": "seoul.recruiting@kearney.com",
-      "apply_type": "이메일",
-      "homepage_url": "https://www.kearney.co.kr",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-19T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 서초구 서초대로 398",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/842875",
-      "description_text": "Kearney Korea Research Assistant (Intern) 모집 공고\n\n글로벌 경영 전략 컨설팅펌 Kearney Korea에서 Research Assistant를 모집합니다.\n당사는 국내 최대 규모의 전략 컨설팅 회사로 세계적 수준의 전략, 운영 및 테크놀로지 Consulting Service를 제공하고 있습니다.\n\n*포지션: Research Assistant (Intern)\n*모집인원: 0명\n*근무지: 강남\n*근무기간: 6/1 ~ 11/30\n(*파일명에 본인 근무 가능일자 기재 바랍니다.)\n\n*지원자격:\n■ 필수사항\n- SQL 고급 사용자 (SQL 실무 활용 경험자)\n- Python 중•고급 사용자 (Python 데이터 분석 및 활용 경험자)\n- 해당 기간 내 Full-time 근무 가능한 재/휴학생, 졸업생\n\n■ 우대사항\n- 컴퓨터공학, 산업공학, 통계학 전공 재학생 및 졸업생 우대\n- 리서치 RA/인턴 경험 우대\n- 영어 능통자\n\n■ 주요업무\n- SQL/Python 활용 데이터 추출/분석, 컨설팅 리서치 보조\n**이력서 상에 \"SQL/Python 활용 기반 어떤 업무를 수행하였는지\" 기재 요망**\n\n*기타사항\n- 남자의 경우, 병역 필 또는 면제자 등\n- 외국 국적자의 경우, 취업 가능 비자 소지한 자\n\n*채용절차: 서류 전형 및 인터뷰 진행\n*제출서류 및 방법: 영문 resume (PDF only)를 seoul.recruiting@kearney.com 로 송부\n- 이메일 제목&파일명: \"RA_CG_홍길동(본인 이름)_mm.dd~mm.dd(근무가능기간)\"\n*제출기한: ASAP, 채용 시 마감\n*홈페이지: www.kearney.co.kr\n- 문의사항은 이메일(seoul.recruiting@kearney.com)로 주시기 바랍니다.\n- 허위사실이 발견될 경우 채용이 취소될 수 있습니다.",
-      "view_count": 0,
-      "discovered_at": "2026-05-22T04:35:45+00:00"
-    },
-    {
       "id": "323504",
       "title": "[신사업] 글로벌 콘텐츠 마케팅 인턴 (태국)",
       "organization": "(주)힐링페이퍼",
@@ -3824,26 +3784,6 @@
       "discovered_at": "2026-05-21T04:46:33+00:00"
     },
     {
-      "id": "323204",
-      "title": "[Kearney Korea] RA(인턴) 모집 공고 (MS Office)",
-      "organization": "에이티커니코리아",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/323204",
-      "apply_url": "seoul.recruiting@kearney.com",
-      "apply_type": "이메일",
-      "homepage_url": "https://www.kearney.co.kr",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-18T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 영동대로 517",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/841783",
-      "description_text": "﻿\nkearney Korea Research Analyst (Intern) 모집 공고\n\n글로벌 경영 전략 컨설팅펌 Kearney Korea에서 Research Analyst를 모집합니다.\n당사는 국내 최대 규모의 전략 컨설팅 회사로 세계적 수준의 전략, 운영 및 테크놀로지 Consulting Service를 제공하고 있습니다.\n\n* 포지션: Research Analyst (Intern) \n* 모집인원: 0명\n* 근무기간: ASAP ~ 7/31 (약 3개월, 채용 시점에 따라 협의 가능)\n ※ 근무 가능 기간을 파일명에 반드시 기재 바랍니다.\n\n■ 필수사항\n- Excel 및 Powerpoint 활용 능력 우수자 \n- (4년제 대학 기준) 26년 8월 졸업 예정자 혹은 기졸업자  \n  * 이력서 내 학력 사항에 입학 및 졸업(예정) 연·월 기재 필수\n- 해당 기간동안 Full-time 근무 가능자\n\n■ 우대사항 (우대사항에 해당하는 경우, Mail body에 기재 바랍니다.)\n- 영어 능통자\n- 컨설팅펌 RA 유경험자\n\n■ 주요업무\n- 리서치 / 문서 작업\n\n* 기타사항\n- 남자의 경우, 병역 필 또는 면제자 등\n- 외국 국적자의 경우, 취업 가능 비자 소지한 자\n\n* 채용절차: 서류 전형 및 인터뷰 진행\n* 제출서류 및 방법: 영문 resume (PDF only)를 seoul.recruiting@kearney.com 로 송부\n- 이메일 제목&파일명: “RA_전략_홍길동(본인이름)_mm.dd~mm.dd(근무가능기간)”\n* 제출기한: ASAP, 채용 시 마감\n* 홈페이지: www.kearney.co.kr\n- 문의사항은 이메일(seoul.recruiting@kearney.com)로 주시기 바랍니다.\n- 허위사실이 발견될 경우 채용이 취소될 수 있습니다.\n﻿",
-      "view_count": 0,
-      "discovered_at": "2026-05-21T04:46:34+00:00"
-    },
-    {
       "id": "323187",
       "title": "●48시간 초고속 트랙● [챌린저스] 사업 운영 인턴 (자동차 구독 사업)",
       "organization": "주식회사 화이트큐브",
@@ -3962,26 +3902,6 @@
       "description_text": "트릿지는 전세계 농식품 무역의 정보 비대칭과 비효율을 데이터와 기술로 해결해왔습니다.\n트릿지의 다음 챕터는 10년간 쌓아 온 농식품 Vertical Intelligence를 공급망 네트워크로 확장하는 것입니다.\n방대한 도메인 데이터를 기반으로 독점적 산업 지능(Vertical AI)을 만들고,\n바이어–셀러 네트워크의 상호작용 자동화(Horizontal AI)로 확산시켜,\n거래가 스스로 확장되는 ‘글로벌 공급망 OS’ 를 구축합니다.\n우리는 어려운 환경과 현실적 제약 속에서도 멈추지 않았고, 그 과정은 더 강한 실행력과 선명한 방향성을 만들었습니다.\n무엇이 핵심인지 더 분명히 알게 되었고, 무엇을 어떻게 실행해야 하는지도 더 선명해졌습니다.\n\n트릿지가 풀고자 하는 문제는 여전히 크고, 그래서 우리는 좋은 동료가 필요합니다. \n인류가 오랫동안 풀지 못한 시장 비대칭, 불균형 문제를 지속가능한 방식으로 해결하고 다음 챕터를 현실로 만들기 위해, 더 깊게 사고하고 더 단단하게 실행할 동료를 찾고 있습니다.\n-----------------------------------------------\n이러한 업무를 수행합니다:\n수출을 희망하는 기업의 상품을 분석하고, 적합한 타겟 시장을 도출합니다.\n국가별 소비 트렌드 및 시장 특성을 분석하고, 해외 진출 전략 리포트를 작성합니다.\n트릿지 무역 거래 데이터와 연계하여 구체적인 타겟 시장과 잠재 바이어를 설정합니다.\n타겟 시장 내 경쟁 상품을 비교·분석하여 차별화 포인트 및 시장 진출 기회를 도출합니다.\n잠재 고객 및 바이어에게 트릿지 솔루션을 소개하고 영업 미팅 기회를 발굴합니다. (Lead Generation)\n\n이러한 역량과 경험이 있는 분들을 찾습니다:\n식품 카테고리 중심 해외 시장 조사, 마케팅, 트렌드 리포트 작성 경험이 있으신 분\n글로벌 리서치 기관의 자료를 활용하여 시장 분석이 가능하신 분\nPPT, Python 등 분석, 리포트 작성 도구 활용이 가능하신 분\n고객 데이터를 기반으로 효과적인 영업 전략을 세우고 수행하",
       "view_count": 0,
       "discovered_at": "2026-05-20T04:38:32+00:00"
-    },
-    {
-      "id": "322900",
-      "title": "[Kearney Korea] RA(인턴) 모집 공고 (중국어)",
-      "organization": "에이티커니코리아",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/322900",
-      "apply_url": "seoul.recruiting@kearney.com",
-      "apply_type": "이메일",
-      "homepage_url": "https://www.kearney.co.kr",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-17T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 영동대로 517",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/840644",
-      "description_text": "﻿\nkearney Korea Research Analyst (Intern) 모집 공고\n\n글로벌 경영 전략 컨설팅펌 Kearney Korea에서 Research Analyst를 모집합니다.\n당사는 국내 최대 규모의 전략 컨설팅 회사로 세계적 수준의 전략, 운영 및 테크놀로지 Consulting Service를 제공하고 있습니다.\n\n* 포지션: Research Analyst (Intern)\n* 모집인원: 0명\n* 근무기간:  5/25 ~7/10 (프로젝트 사정에 따라 연장 가능)\n\n■ 필수사항\n- 중국어 Native\n- 계약기간동안 Full-time 근무 가능자\n\n■ 우대사항 (우대사항에 해당하는 경우, Mail body에 기재 바랍니다.)\n- 건강기능식품, 소비재 관련 경험 및 이해\n- 컨설팅 RA 유경험자\n\n■ 주요업무\n- 리서치 및 Data 취합/정리\n- Interview 통역 지원\n\n* 기타사항\n- 남자의 경우, 병역 필 또는 면제자 등\n- 외국 국적자의 경우, 취업 가능 비자 소지한 자\n\n* 채용절차: 서류 전형 및 인터뷰 진행\n* 제출서류 및 방법: 영문 resume (PDF only)를 seoul.recruiting@kearney.com 로 송부\n- 이메일 제목&파일명: “RA_중국어_홍길동(본인이름)_mm.dd~mm.dd(근무가능기간)”\n* 제출기한: ASAP, 채용 시 마감\n* 홈페이지: www.kearney.co.kr\n- 문의사항은 이메일(seoul.recruiting@kearney.com)로 주시기 바랍니다.\n- 허위사실이 발견될 경우 채용이 취소될 수 있습니다.\n﻿",
-      "view_count": 0,
-      "discovered_at": "2026-05-20T04:38:33+00:00"
     },
     {
       "id": "322829",
