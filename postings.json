@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-06-29T09:58:31+00:00",
+  "fetched_at": "2026-06-29T14:19:14+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 379,
+  "count": 378,
   "postings": [
     {
       "id": "331736",
@@ -1420,26 +1420,6 @@
       "description_image_local": "images/330134.png",
       "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/866827",
       "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-06-23T00:19:57+00:00"
-    },
-    {
-      "id": "330131",
-      "title": "[쇼포트] Product Engineer Internship (Frontend)",
-      "organization": "주식회사 레브잇",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/330131",
-      "apply_url": "https://team.alwayz.co/job_posting/DHhVTJrG?utm_source=%EB%A7%81%EC%BB%A4%EB%A6%AC%EC%96%B4",
-      "apply_type": "접수페이지",
-      "homepage_url": "",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-09-20T14:59:59+00:00",
-      "salary_info": "면접 후 결정",
-      "address": "서울 관악구 남부순환로 1836",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/866799",
-      "description_text": "레브잇 PMF팀은 강재윤 CEO를 포함한 핵심 멤버들이 모여,\n패션·뷰티·건강식품·가전·가구 등 다양한 카테고리에서 ‘AI 쇼핑 비서(AI Shopping Assistant)’를 만들고 있습니다. \n\nAI를 통해 고객의 언어와 맥락을 이해하고, 신뢰할 수 있는 쇼핑 경험을 새롭게 정의합니다.\n\n[합류하게 될 팀]\n\n레브잇 PMF팀은 쇼핑 AI 에이전트를 기획·개발하는 팀입니다.\nProduct Engineer는 기술을 목표 자체로 보지 않고, 비즈니스와 사용자 경험을 개선하기 위한 도구로 활용하며, PS·디자이너와의 협업을 통해 더 높은 완성도의 프로덕트를 만듭니다.\n\n🚀 PMF 팀 소개 바로가기: https://team.alwayz.co/pmf\n\n🛸 Problem Solver 인터뷰 바로가기: https://blog.alwayz.co/jj\n\n[Team Culture]\n\nPMF팀은 초기 창업팀처럼 일하고 있습니다. 아래 팀 문화에 공감하는 분이 지원해주시면 좋겠습니다.\n\nImpact-oriented: 위대한 임팩트를 진심으로 추구하는가. 진심으로 임팩트를 추구해야만 빛을 만들 수 있다고 믿습니다.\n\nRaw intelligence: 지금 얼마나 많은 지식을 알고 있느냐가 아니라, 새로운 지식과 상황을 빠르게 배우고 습득하고 응용해낼 수 있는지가 중요합니다.\nHard-working: 몰입의 깊이와 시간을 극대화할 수 있는가. 얼마나 더 깊게 이 미션에 몰입할 수 있는가가 핵심이라고 생각합니다.\nHumble: 내가 틀릴 수 있음을 인정하고, 수정하고, 협업할 수 있는가. 내 의견이 완전히 진실만은 아닐 수 있음을 알고 업데이트할 수 있는 자세가 정답을 찾아나가야 하는 환경에서는 특히 중요합니다.\n\n \n\n[합류하면 함께 할 업무]\n\n프론트엔드 구조 재설계\n\n현재 각 버티컬 제품이 빠르게 성장하면서, 프론트엔드 로직과 UI가 분산된 상태입니다. 이 문제를 해결하기 위해 디자인 시스템 기반으로 전체 제품의 프론트엔드를 리라이팅하는 작업을 함께 합니다.\n단순히 코드를 정리하",
       "view_count": 0,
       "discovered_at": "2026-06-23T00:19:57+00:00"
     },
