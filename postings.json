@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-22T09:37:52+00:00",
+  "fetched_at": "2026-07-22T12:02:29+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 313,
+  "count": 312,
   "postings": [
     {
       "id": "337288",
@@ -6082,26 +6082,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-05-03T14:24:50+00:00"
-    },
-    {
-      "id": "311956",
-      "title": "[아이디어스] 인플루언서 공동구매 인턴 (체험형, 6개월)",
-      "organization": "주식회사 백패커",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/311956",
-      "apply_url": "https://team.backpac.kr/o/209330",
-      "apply_type": "접수페이지",
-      "homepage_url": "",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-06-14T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 서초구 서초대로 398",
-      "description_image_urls": "https://image.idus.com/image/files/214d5c682c974c3f96b0c9461372cdea.jpg",
-      "description_image_local": "images/311956.jpg",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/802838",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-05-19T04:34:10+00:00"
     },
     {
       "id": "308795",
