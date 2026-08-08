@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-08T14:48:48+00:00",
+  "fetched_at": "2026-08-08T15:44:30+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 324,
+  "count": 322,
   "postings": [
     {
       "id": "341302",
@@ -2884,26 +2884,6 @@
       "discovered_at": "2026-07-27T03:59:23+00:00"
     },
     {
-      "id": "338054",
-      "title": "[리쿠르트퍼스트코리아] 글로벌 써치펌 마케팅 인턴",
-      "organization": "리쿠르트퍼스트코리아",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/338054",
-      "apply_url": "krystal.ahn@hrnetgroup.com",
-      "apply_type": "이메일",
-      "homepage_url": "https://www.recruitfirst.co/",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-08-08T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 중구 을지로5길 19",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/895366",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-07-27T03:59:24+00:00"
-    },
-    {
       "id": "338053",
       "title": "[트립닷컴] HR Assistant, Korea",
       "organization": "트립닷컴",
@@ -3782,26 +3762,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-07-14T09:15:47+00:00"
-    },
-    {
-      "id": "335304",
-      "title": "[블루엘리펀트] 그로스 마케터 인턴",
-      "organization": "블루엘리펀트",
-      "organization_type": "중소기업",
-      "detail_url": "https://linkareer.com/activity/335304",
-      "apply_url": "https://recruit.blueelephant.co/job_posting/5zlZaCGg",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.blueelephant.co/",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-08-08T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 성동구 아차산로5길 8",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/885575",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-07-14T03:30:40+00:00"
     },
     {
       "id": "335251",
