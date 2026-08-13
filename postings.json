@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-13T13:44:35+00:00",
+  "fetched_at": "2026-08-13T15:13:37+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 312,
+  "count": 307,
   "postings": [
     {
       "id": "342617",
@@ -1764,26 +1764,6 @@
       "discovered_at": "2026-08-05T03:30:58+00:00"
     },
     {
-      "id": "340416",
-      "title": "[EY한영] TALENT L&D(교육팀) 단기 인턴",
-      "organization": "EY한영",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/340416",
-      "apply_url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124102",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.ey.com/ko_kr",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-08-13T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 영등포구 여의공원로 111",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/357256",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-08-05T03:30:59+00:00"
-    },
-    {
       "id": "340412",
       "title": "[에이치에스애드] 커머스AX미디어팀 퍼포먼스 광고 기획,운영",
       "organization": "에이치에스애드",
@@ -1842,26 +1822,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-08-05T03:31:01+00:00"
-    },
-    {
-      "id": "340331",
-      "title": "[EY한영] TALENT L&D(교육팀) 단기 인턴",
-      "organization": "EY한영",
-      "organization_type": "중견기업",
-      "detail_url": "https://linkareer.com/activity/340331",
-      "apply_url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124102",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.ey.com/ko_kr",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-08-13T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 영등포구 여의공원로 111",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/903741",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-08-05T03:31:00+00:00"
     },
     {
       "id": "340273",
@@ -2602,26 +2562,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-07-30T09:39:15+00:00"
-    },
-    {
-      "id": "339230",
-      "title": "AI 스타트업 글로벌 마케팅 인턴",
-      "organization": "주식회사 멜",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/339230",
-      "apply_url": "https://linkareer.com/activity/339230",
-      "apply_type": "간편지원",
-      "homepage_url": "",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-08-13T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 강남대로 464",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/899448",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-07-30T03:25:11+00:00"
     },
     {
       "id": "339219",
@@ -5884,26 +5824,6 @@
       "discovered_at": "2026-05-19T04:32:43+00:00"
     },
     {
-      "id": "322349",
-      "title": "[아마존웹서비시즈코리아] Associate Solutions Architect",
-      "organization": "아마존웹서비시즈코리아",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/322349",
-      "apply_url": "https://www.amazon.jobs/en/jobs/10420805/associate-solutions-architect",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://aws.amazon.com/ko/",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-13T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 논현로 508",
-      "description_image_urls": "https://media-cdn.linkareer.com//se2editor/image/838516",
-      "description_image_local": "images/322349.png",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/838517",
-      "description_text": "[아마존웹서비시즈코리아] Associate Solutions Architect\n\n[자격요건]\n- Bachelor's degree or above in Computer Science, Computer Engineering, or related fields.\n- Expected to graduate by August 2026, or graduated within the past 24 months.\n- Experience with two or more of the following: networking fundamentals, security, storage or databases (relational or NoSQL), operating systems (Unix, Linux, and/or Windows).\n- Experience with one of the following programming languages: Java, Python, Ruby, Node.js, C#, C++, or other modern computing languages.\n\n[접수기간]\n05월 16일 ~ 채용시 마감\n\n[채용공고]",
-      "view_count": 0,
-      "discovered_at": "2026-05-19T04:32:48+00:00"
-    },
-    {
       "id": "322347",
       "title": "[올리브인터내셔널] [북미/유럽본부] 미국 틱톡샵(TikTok Shop) 운영 인턴 (채용연계형)",
       "organization": "올리브인터내셔널",
@@ -5922,26 +5842,6 @@
       "description_text": "[올리브인터내셔널] [북미/유럽본부] 미국 틱톡샵(TikTok Shop) 운영 인턴 (채용연계형)\n\n[담당업무]\nMission 1. 미국 틱톡샵 커머스 실무 및 상품 관리\n미국 틱톡샵 내에 상품을 매력적으로 리스팅하고 상세 페이지를 관리하는 등 운영 전반을 돕습니다.\n숍 스코어(Shop Score) 유지를 위해 고객 반응을 모니터링하며 글로벌 커머스 플랫폼 운영의 기초를 배웁니다.\n글로벌 플랫폼의 물류 현황과 재고가 어떻게 흐르는지 가까이서 지켜보고 운영을 지원합니다.\n\nMission 2. 매출 성장을 이끄는 프로모션 기획 및 운영 지원\n미국 현지 타겟 고객의 반응을 이끌어낼 수 있는 틱톡샵 내 프로모션 아이디어를 주도적으로 고민하고 제안합니다.\n기획된 프로모션이 차질 없이 진행될 수 있도록 운영 과정을 밀착 서포트하며 실무 감각을 익힙니다.\n\nMission 3. 신제품 론칭을 위한 현지 시장 및 트렌드 조사\n틱톡, 릴스 등에서 유행하는 최신 밈(Meme)과 글로벌 뷰티 트렌드를 리서치해 팀에 공유합니다.\n미국 뷰티 시장의 전반적인 동향과 경쟁사들의 움직임을 꼼꼼하게 리서치하여 팀에 인사이트를 공유합니다.\n미국 유저들이 소비하는 틱톡 콘텐츠와 알고리즘을 분석하여, 신제품 론칭에 필요한 마케팅 가설을 도출합니다.\n\n[접수기간]\n05월 16일 ~ 채용시 마감\n\n[채용공고]",
       "view_count": 0,
       "discovered_at": "2026-05-19T04:32:49+00:00"
-    },
-    {
-      "id": "322245",
-      "title": "[데카트론코리아] HR Intern",
-      "organization": "데카트론코리아",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/322245",
-      "apply_url": "https://decathlon.ninehire.site/job_posting/DFnc9Mrv?lang=en",
-      "apply_type": "접수페이지",
-      "homepage_url": "",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-13T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 서초구 서초동 1321",
-      "description_image_urls": "https://image.ninehire.com/job-posting/4a330d91-e1fd-11ef-bf50-c13dc3076bac/55ae1080-57ea-11f0-80aa-27d19164d2cc.jpg",
-      "description_image_local": "images/322245.jpg",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/838021",
-      "description_text": "[데카트론코리아] HR Intern\n\n[모집기간]\n채용 시 마감\n\n[담당업무]\nGeneral Administration\n-Corporate Fleet Management: Oversee company vehicle schedules, coordinate regular maintenance/inspections, and manage related documentation.\n-Office Operations: Manage office facilities and supplies in collaboration with partners (e.g., SPARKPLUS); handle invoice processing for rent, utilities, and corporate services.\n-GA Budget Control: Upload and track monthly fixed/flexible expenses (GEX) and assist in maintaining the Bugeting file for the department.\n\nHR Operations & Employee Experience\n-Data Management: Maintain accurate employee records in the HRIS and assist in the preparation of HR-related certificates and contracts.\n-Event Coordination: Support the planning and execution of company-wide events, such as Kick-off meetings and VIP visits (APAC leadership logistics).\n-Compliance Training: Monitor the completion status of mandatory online courses (Sexual Harassment Prevention, Workplace Harassment, Disability Aware",
-      "view_count": 0,
-      "discovered_at": "2026-05-15T10:37:03+00:00"
     },
     {
       "id": "321567",
