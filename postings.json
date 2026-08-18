@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-18T07:52:07+00:00",
+  "fetched_at": "2026-08-18T08:52:03+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 279,
+  "count": 277,
   "postings": [
     {
       "id": "343489",
@@ -1364,26 +1364,6 @@
       "discovered_at": "2026-08-11T04:37:35+00:00"
     },
     {
-      "id": "341750",
-      "title": "CX 인턴",
-      "organization": "주식회사 코드잇",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/341750",
-      "apply_url": "https://careers.codeit.com/c/gxH7r81hev",
-      "apply_type": "접수페이지",
-      "homepage_url": "",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-11-08T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 중구 청계천로 100",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/909207",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-08-11T04:37:38+00:00"
-    },
-    {
       "id": "341715",
       "title": "[플랫폼 사업] 프로덕트 디자이너 인턴 (체험형)",
       "organization": "(주)힐링페이퍼",
@@ -1822,26 +1802,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-08-07T04:02:52+00:00"
-    },
-    {
-      "id": "341120",
-      "title": "QA Intern",
-      "organization": "주식회사 라포랩스",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/341120",
-      "apply_url": "https://career.rapportlabs.kr/job_posting/VqjgGUOE",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.rapportlabs.kr/ko/jobs",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-11-05T14:59:59+00:00",
-      "salary_info": "2,300,000원 ~ 2,300,000원/월",
-      "address": "서울 강남구 테헤란로98길 8",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/677665",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-08-07T04:02:51+00:00"
     },
     {
       "id": "341084",
