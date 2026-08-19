@@ -1,8 +1,28 @@
 {
-  "fetched_at": "2026-08-19T05:45:08+00:00",
+  "fetched_at": "2026-08-19T07:03:30+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
   "count": 280,
   "postings": [
+    {
+      "id": "343865",
+      "title": "[에너지IT기업] 전력시장 리서치 (인턴) 모집",
+      "organization": "에너닷",
+      "organization_type": "스타트업",
+      "detail_url": "https://linkareer.com/activity/343865",
+      "apply_url": "https://enerdot.career.greetinghr.com/o/233527",
+      "apply_type": "접수페이지",
+      "homepage_url": "https://www.enerdot.co.kr/",
+      "recruit_type": "ASAP",
+      "recruit_close_at": "2026-11-17T14:59:59+00:00",
+      "salary_info": "회사 내규에 따름",
+      "address": "서울 강남구 테헤란로44길 8",
+      "description_image_urls": "",
+      "description_image_local": "",
+      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/917080",
+      "description_text": "",
+      "view_count": 0,
+      "discovered_at": "2026-08-19T07:03:04+00:00"
+    },
     {
       "id": "343857",
       "title": "andar 일본 디지털 마케팅 운영 체험형인턴 채용",
@@ -3562,26 +3582,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-07-21T09:37:45+00:00"
-    },
-    {
-      "id": "336775",
-      "title": "Talent Acquisition 인턴",
-      "organization": "주식회사 코드잇",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/336775",
-      "apply_url": "https://careers.codeit.com/c/ewjxsfTEXC",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://careers.codeit.com",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-10-19T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 중구 청계천로 100",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/857044",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-07-21T03:41:55+00:00"
     },
     {
       "id": "336671",
