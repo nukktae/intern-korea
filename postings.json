@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-08-24T14:58:40+00:00",
+  "fetched_at": "2026-08-24T15:53:38+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 285,
+  "count": 283,
   "postings": [
     {
       "id": "345078",
@@ -5462,46 +5462,6 @@
       "description_text": "[컬쳐히어로] 커머스팀 AMD\n\n[모집기간]\n채용 시 마감\n\n[담당업무]\n-핵심 전략상품 등록 및 운영관리\n-상품 소싱 및 운영 업무\n-자사 APP PUSH 기획 및 예약 집행\n-기타 리포팅 업무\n\n[자격요건]\n-4년제 대학교 졸업(예정) 이상의 학력 소지자\n-식품/키친/리빙 관련 산업에 대한 관심 및 이해도가 높으신 분\n-콘텐츠 기반 커머스에 대한 관심이 높으신 분\n-성과 지향적이며 수치, 숫자의 변화를 꼼꼼하게 볼 수 있는 분\n-빠르게 변화하는 환경에 적응력이 높고, 실행력이 있으신 분\n\n[우대사항]\n-SNS 및 블로그 등 개인 온드미디어를 활발히 운영해 본 분\n-마케팅/광고대행사/온라인 쇼핑몰 MD로 근무를 경험해본 분 (인턴 포함)\n-MS Office툴을 능숙하게 활용할 수 있는 분\n-유통/경영/광고홍보/무역 관련 전공자\n\n[채용공고]",
       "view_count": 0,
       "discovered_at": "2026-05-27T08:47:42+00:00"
-    },
-    {
-      "id": "324252",
-      "title": "[하이퍼커넥트] Tinder Seoul 백엔드 인턴",
-      "organization": "하이퍼커넥트",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/324252",
-      "apply_url": "https://career.hyperconnect.com/job/433a4f22-315e-4a2e-a1e8-718be0098b71/",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://hyperconnect.com/ko/",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-24T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 테헤란로 507",
-      "description_image_urls": "https://media-cdn.linkareer.com//se2editor/image/845530",
-      "description_image_local": "images/324252.png",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/845531",
-      "description_text": "[하이퍼커넥트] Tinder Seoul 백엔드 인턴\n\n[모집기간]\n채용 시 마감\n\n[담당업무]\n-추천 시스템 인프라의 특정 문제를 직접 정의하고, 설계부터 프로덕션 배포까지 end-to-end로 수행\n-독립 프로젝트 형태로 진행하며, 현업 엔지니어 멘토링 하에 실제 프로덕션 환경에서 작업\n-글로벌 엔지니어, PM, 데이터 사이언티스트 등과 협업\n-팀 온보딩을 시작으로 독립 프로젝트 수행 후 팀 리더십 앞에서 결과 발표\n\n[자격요건]\n- 컴퓨터공학 또는 관련 전공 졸업 예정 및 졸업 (학/석사)\n- Java, Scala, Python 중 하나 이상의 언어에 능숙\n- 자료구조, 알고리즘, 운영체제, 네트워크 등 기본 CS 지식 보유\n- 분산 시스템 또는 대용량 데이터 처리에 대한 관심\n- 주도적으로 문제를 정의하고 해결한 경험이 있는 분\n- 코드 리뷰 및 협업 과정에서 건설적이고 존중 기반의 커뮤니케이션이 가능한 분\n- 영어 커뮤니케이션이 가능한 분\n- 12주간 풀타임 근무 가능한 분 \n\n[우대사항]\n-Kafka, Elasticsearch, Flink 등 데이터 파이프라인 기술 사용 경험\n-Kubernetes, Docker 기반 서비스 운영 또는 개발 경험\n-오픈소스 기여 또는 개인 프로젝트로 인프라 관련 경험을 보여줄 수 있는 분\n-원활한 영어 커뮤니케이션 \n\n[채용공고]",
-      "view_count": 0,
-      "discovered_at": "2026-05-27T04:46:50+00:00"
-    },
-    {
-      "id": "324205",
-      "title": "[삼정회계법인] [인턴] QRM-RM 독립성팀 인턴 채용",
-      "organization": "삼정회계법인",
-      "organization_type": "중견기업",
-      "detail_url": "https://linkareer.com/activity/324205",
-      "apply_url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000882",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://kpmg.com/kr/ko.html",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-08-24T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 테헤란로 152",
-      "description_image_urls": "https://media-cdn.linkareer.com//se2editor/image/845343",
-      "description_image_local": "images/324205.jpg",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/845363",
-      "description_text": "[삼정회계법인] [인턴] QRM-RM 독립성팀 인턴 채용\n\n[담당업무]\nQ&RM E&I(품질관리실 독립성팀) Compliance Test 업무 수행\n\n[접수기간]\n05월 26일 ~ 06월 03일\n\n[채용공고]",
-      "view_count": 0,
-      "discovered_at": "2026-05-27T04:46:50+00:00"
     },
     {
       "id": "321567",
