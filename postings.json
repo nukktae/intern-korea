@@ -1,8 +1,28 @@
 {
-  "fetched_at": "2026-08-26T07:07:14+00:00",
+  "fetched_at": "2026-08-26T07:57:30+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
   "count": 289,
   "postings": [
+    {
+      "id": "345761",
+      "title": "STUDIO TOMBOY 여성디자인실 업무보조 채용",
+      "organization": "(주)삼구아이앤씨",
+      "organization_type": "중견기업",
+      "detail_url": "https://linkareer.com/activity/345761",
+      "apply_url": "jy.park@isamkoo.com",
+      "apply_type": "이메일",
+      "homepage_url": "",
+      "recruit_type": "ASAP",
+      "recruit_close_at": "2026-11-24T14:59:59+00:00",
+      "salary_info": "1,890,000원 ~ 1,890,000원/월",
+      "address": "서울 강남구 도산대로 420",
+      "description_image_urls": "",
+      "description_image_local": "",
+      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/659483",
+      "description_text": "",
+      "view_count": 0,
+      "discovered_at": "2026-08-26T07:57:02+00:00"
+    },
     {
       "id": "345745",
       "title": "[동아일보] LUUX 옥외전광판 디자인·마케팅 인턴 채용",
@@ -4142,26 +4162,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-07-14T03:30:39+00:00"
-    },
-    {
-      "id": "335249",
-      "title": "STUDIO TOMBOY 여성디자인실 업무보조 채용",
-      "organization": "(주)삼구아이앤씨",
-      "organization_type": "중견기업",
-      "detail_url": "https://linkareer.com/activity/335249",
-      "apply_url": "jy.park@isamkoo.com",
-      "apply_type": "이메일",
-      "homepage_url": "",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-10-12T14:59:59+00:00",
-      "salary_info": "1,890,000원 ~ 1,890,000원/월",
-      "address": "서울 강남구 도산대로 420",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/885393",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-07-14T03:30:41+00:00"
     },
     {
       "id": "335104",
