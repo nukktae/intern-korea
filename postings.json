@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-22T09:55:46+00:00",
+  "fetched_at": "2026-09-22T14:50:47+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 274,
+  "count": 272,
   "postings": [
     {
       "id": "352705",
@@ -582,26 +582,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-09-17T11:37:13+00:00"
-    },
-    {
-      "id": "351502",
-      "title": "[넥스트플레이어] 해외 (일본, 미국) 인플루언서 시딩 포지션 채용",
-      "organization": "주식회사 넥스트플레이어",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/351502",
-      "apply_url": "https://linkareer.com/activity/351502",
-      "apply_type": "간편지원",
-      "homepage_url": "",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-10-31T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 성동구 뚝섬로17가길 49",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/942769",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-17T11:37:12+00:00"
     },
     {
       "id": "351496",
@@ -3662,26 +3642,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-08-18T03:07:12+00:00"
-    },
-    {
-      "id": "343059",
-      "title": "[토리든] 글로벌 인플루언서 마케팅 인턴",
-      "organization": "토리든",
-      "organization_type": "중소기업",
-      "detail_url": "https://linkareer.com/activity/343059",
-      "apply_url": "https://torriden.ninehire.site/job_posting/kVmljGci?utm_source=%EB%A7%81%EC%BB%A4%EB%A6%AC%EC%96%B4",
-      "apply_type": "접수페이지",
-      "homepage_url": "",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-11-12T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 송파구 올림픽로 300",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/914222",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-08-14T08:36:21+00:00"
     },
     {
       "id": "342881",
