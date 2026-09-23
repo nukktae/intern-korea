@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-23T11:30:52+00:00",
+  "fetched_at": "2026-09-23T16:54:21+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 271,
+  "count": 266,
   "postings": [
     {
       "id": "352905",
@@ -764,26 +764,6 @@
       "discovered_at": "2026-09-17T11:37:11+00:00"
     },
     {
-      "id": "351491",
-      "title": "북미 마케팅 인턴",
-      "organization": "주식회사 멜",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/351491",
-      "apply_url": "https://linkareer.com/activity/351491",
-      "apply_type": "간편지원",
-      "homepage_url": "https://mel.us/about/",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-09-23T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 강남대로 464",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/942732",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-17T11:37:12+00:00"
-    },
-    {
       "id": "351446",
       "title": "[신한투자증권] 대학생 체험형 인턴사원 공개채용_기업금융영업부",
       "organization": "신한투자증권",
@@ -1202,26 +1182,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-09-16T04:51:44+00:00"
-    },
-    {
-      "id": "350971",
-      "title": "UX/UI 디자이너 인턴모집",
-      "organization": "뉴로클",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/350971",
-      "apply_url": "https://www.neurocle-career.com/3dcc4855-3e7f-80b3-b430-d780b49c0fe9",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.neuro-cle.com/",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-09-23T16:00:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강동구 고덕비즈밸리로4길 30",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/734213",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-15T13:30:31+00:00"
     },
     {
       "id": "350967",
@@ -2562,26 +2522,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-09-04T04:27:55+00:00"
-    },
-    {
-      "id": "347923",
-      "title": "[클럽메드] 본사 마케팅 인턴 채용",
-      "organization": "클럽메드바캉스",
-      "organization_type": "외국계기업",
-      "detail_url": "https://linkareer.com/activity/347923",
-      "apply_url": "https://linkareer.com/activity/347923",
-      "apply_type": "간편지원",
-      "homepage_url": "https://www.clubmed.com",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-09-23T14:59:59+00:00",
-      "salary_info": "2,200,000원 ~ 2,200,000원/월",
-      "address": "서울 강남구 테헤란로87길 36",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/928451",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-03T09:45:27+00:00"
     },
     {
       "id": "347890",
@@ -5364,26 +5304,6 @@
       "discovered_at": "2026-07-03T04:57:00+00:00"
     },
     {
-      "id": "303516",
-      "title": "[체험형 인턴] HR Intern(채용 운영)",
-      "organization": "피에프씨테크놀로지스",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/303516",
-      "apply_url": "https://pfct.career.greetinghr.com/ko/o/236699",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.pfct.co.kr/",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-09-23T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 서초구 서초대로50길 35",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/770020",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-11T04:36:02+00:00"
-    },
-    {
       "id": "296847",
       "title": "[텀블벅/tumblbug] 크라우드 펀딩 MD (체험형 인턴, 6개월)",
       "organization": "주식회사 백패커",
@@ -5402,26 +5322,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-05-19T08:39:00+00:00"
-    },
-    {
-      "id": "280780",
-      "title": "글로벌 인플루언서 마케팅 AE 인턴 (체험형)",
-      "organization": "주식회사 보더엑스",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/280780",
-      "apply_url": "https://borderxcareers.ninehire.site/job_posting/odO7efpj",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.borderx.com/",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-06-22T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 중구 남대문로9길 24",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/694486",
-      "description_text": "Go Big, Go Borderless with BorderX.\n우리는 국경을 초월하는 성장을 꿈꿉니다.\n\nBorderX는 글로벌 진출을 꿈꾸는 기업과 브랜드를 대상으로 맞춤형 브랜딩 및 마케팅 서비스를 제공하는 Global Native Digital Agency입니다. F&B, 뷰티, 모빌리티 등 다양한 브랜드와 글로벌 캠페인을 성공적으로 진행하며 매년 빠르게 성장하고 있습니다. BorderX와 함께 세계를 무대로 더 큰 성장을 함께할 동료를 찾고 있습니다!\n\nLearn more about us: View more\n\nOur Awards & Recognitions\n- 2025 Cannes Corporate Online Media - Social Media Videos(incl. Vertical Videos) 부문 Finalist: View more\n- 2025 NYX 어워즈 소셜 부문 대상(Grand Prize) 수상: View more\n- 2025 MUSE 어워즈 브랜디드 콘텐츠 & 이벤트 영상 3개 부문 플래티넘 수상: View more\n\nAbout the Global Brand Partnerships Team & Role\n“Brands don’t grow through channels — they grow through culture, built through content and scaled through PR, media, and communication.”\n- 오늘날 디지털 환경에서 브랜드의 글로벌 성장은 단일 채널이 아닌, 크리에이터, 콘텐츠, PR, 미디어가 유기적으로 연결되어 이루어지고 있습니다.\n- BorderX의 Global Brand Partnerships Team은 글로벌 크리에이터와 각 시장의 문화적 맥락을 연결해 브랜드의 확장 가능한 스토리를 설계하고, 이를 콘텐츠, 미디어, PR을 통해 효과적으로 확산시켜 실질적인 비즈니스 성과로 전환합니다.\n\nHow You’ll Grow\n- 브랜드의 글로벌 인플루언서 캠페인에 참여하며, 글로벌 인",
-      "view_count": 0,
-      "discovered_at": "2026-05-03T14:26:06+00:00"
     }
   ]
 }
