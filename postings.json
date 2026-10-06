@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-10-05T18:23:57+00:00",
+  "fetched_at": "2026-10-06T00:47:22+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 225,
+  "count": 224,
   "postings": [
     {
       "id": "354691",
@@ -862,26 +862,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-09-28T06:50:01+00:00"
-    },
-    {
-      "id": "352996",
-      "title": "[신한투자증권] 대학생 체험형 인턴사원 공개채용_디지털자산부",
-      "organization": "신한투자증권",
-      "organization_type": "금융권",
-      "detail_url": "https://linkareer.com/activity/352996",
-      "apply_url": "https://recruit.shinhaninvest.com/recruit/view.do?annoId=4162850",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://www.shinhansec.com/",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-10-05T23:00:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 영등포구 의사당대로 96",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/947986",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-28T00:42:43+00:00"
     },
     {
       "id": "352985",
