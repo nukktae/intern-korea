@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-10-29T21:47:13+00:00",
+  "fetched_at": "2026-10-30T01:56:32+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 264,
+  "count": 262,
   "postings": [
     {
       "id": "360781",
@@ -22,6 +22,26 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-10-29T09:52:57+00:00"
+    },
+    {
+      "id": "360742",
+      "title": "마케팅 프로모션 기획 및 SNS 운영 인턴",
+      "organization": "캐스팅하우스",
+      "organization_type": "중소기업",
+      "detail_url": "https://linkareer.com/activity/360742",
+      "apply_url": "https://linkareer.com/activity/360742",
+      "apply_type": "간편지원",
+      "homepage_url": "https://www.castinghouse.co.kr/",
+      "recruit_type": "ASAP",
+      "recruit_close_at": "2027-01-27T14:59:59+00:00",
+      "salary_info": "회사 내규에 따름",
+      "address": "서울 강남구 도산대로27길 26",
+      "description_image_urls": "",
+      "description_image_local": "",
+      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/975437",
+      "description_text": "",
+      "view_count": 0,
+      "discovered_at": "2026-10-30T01:56:08+00:00"
     },
     {
       "id": "360616",
@@ -1222,26 +1242,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-10-22T10:08:12+00:00"
-    },
-    {
-      "id": "358793",
-      "title": "[넘버즈인/퓌] 글로벌 콘텐츠 마케터 (체험형 인턴)",
-      "organization": "위마케팅",
-      "organization_type": "중소기업",
-      "detail_url": "https://linkareer.com/activity/358793",
-      "apply_url": "https://wemarketinghr.career.greetinghr.com/ko/o/175284",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://wemarketinghr.career.greetinghr.com/ko/intro",
-      "recruit_type": "NORMAL",
-      "recruit_close_at": "2026-11-04T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 강남구 강남대로 382",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/879439",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-10-22T04:38:13+00:00"
     },
     {
       "id": "358791",
@@ -3324,26 +3324,6 @@
       "discovered_at": "2026-09-23T00:29:25+00:00"
     },
     {
-      "id": "352705",
-      "title": "교육 운영기획 매니저 인턴 (AI 부트캠프)",
-      "organization": "팀스파르타",
-      "organization_type": "스타트업",
-      "detail_url": "https://linkareer.com/activity/352705",
-      "apply_url": "https://career.spartaclub.kr/ko/o/237383",
-      "apply_type": "접수페이지",
-      "homepage_url": "",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-12-21T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 구로구 디지털로33길 48",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/946792",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-22T09:55:16+00:00"
-    },
-    {
       "id": "352679",
       "title": "[PTKOREA] [인턴] 대기업 글로벌 웹사이트 개편 및 확산 AE 보조",
       "organization": "PTKOREA",
@@ -4322,26 +4302,6 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-09-03T09:45:27+00:00"
-    },
-    {
-      "id": "347664",
-      "title": "[피엑스디] Product Design Intern (프로덕트 디자인 인턴)",
-      "organization": "피엑스디",
-      "organization_type": "중소기업",
-      "detail_url": "https://linkareer.com/activity/347664",
-      "apply_url": "https://pxd.co.kr/ko/careers",
-      "apply_type": "접수페이지",
-      "homepage_url": "https://pxd.co.kr/ko",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2026-12-01T14:59:59+00:00",
-      "salary_info": "회사 내규에 따름",
-      "address": "서울 성동구 성수이로20길 16",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/929759",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-09-03T04:20:38+00:00"
     },
     {
       "id": "347489",
