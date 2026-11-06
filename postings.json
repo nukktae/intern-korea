@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T21:58:54+00:00",
+  "fetched_at": "2026-11-06T02:23:18+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
   "count": 282,
   "postings": [
@@ -82,6 +82,26 @@
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-11-05T06:39:24+00:00"
+    },
+    {
+      "id": "362393",
+      "title": "[Johnson&Johnson MedTech] Marketing Intern(Neurovascular) 채용",
+      "organization": "(주) 한국존슨앤드존슨",
+      "organization_type": "외국계기업",
+      "detail_url": "https://linkareer.com/activity/362393",
+      "apply_url": "https://www.careers.jnj.com/en/jobs/r-108887/johnsonjohnson-medtech-marketing-intern-neurovascular-%EC%B1%84%EC%9A%A9/",
+      "apply_type": "접수페이지",
+      "homepage_url": "https://www.careers.jnj.com/en/",
+      "recruit_type": "NORMAL",
+      "recruit_close_at": "2026-11-17T14:59:59+00:00",
+      "salary_info": "회사 내규에 따름",
+      "address": "서울 용산구 한강대로 92",
+      "description_image_urls": "",
+      "description_image_local": "",
+      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/982031",
+      "description_text": "",
+      "view_count": 0,
+      "discovered_at": "2026-11-06T02:22:54+00:00"
     },
     {
       "id": "362389",
@@ -3119,26 +3139,6 @@
       "description_image_urls": "",
       "description_image_local": "",
       "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/962524",
-      "description_text": "",
-      "view_count": 0,
-      "discovered_at": "2026-10-15T05:52:35+00:00"
-    },
-    {
-      "id": "357100",
-      "title": "신세계코스메틱 어뮤즈 컨텐츠제작팀 디자인인턴 채용",
-      "organization": "(주)삼구아이앤씨",
-      "organization_type": "중견기업",
-      "detail_url": "https://linkareer.com/activity/357100",
-      "apply_url": "jy.park@isamkoo.com",
-      "apply_type": "이메일",
-      "homepage_url": "",
-      "recruit_type": "ASAP",
-      "recruit_close_at": "2027-01-13T14:59:59+00:00",
-      "salary_info": "2,430,000원 ~ 2,430,000원/월",
-      "address": "서울 강남구 도산대로 138",
-      "description_image_urls": "",
-      "description_image_local": "",
-      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/659483",
       "description_text": "",
       "view_count": 0,
       "discovered_at": "2026-10-15T05:52:35+00:00"
