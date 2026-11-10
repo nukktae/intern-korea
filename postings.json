@@ -1,8 +1,28 @@
 {
-  "fetched_at": "2026-11-09T16:27:17+00:00",
+  "fetched_at": "2026-11-10T00:40:37+00:00",
   "filter": "Seoul · 체험형 인턴 · OPEN",
-  "count": 273,
+  "count": 274,
   "postings": [
+    {
+      "id": "363211",
+      "title": "[예금보험공사] 제28기 동계 대학생인턴 모집 안내",
+      "organization": "예금보험공사",
+      "organization_type": "공공기관/공기업",
+      "detail_url": "https://linkareer.com/activity/363211",
+      "apply_url": "https://www.kdic.or.kr/di/empm/selectPbcrEmpmPbancDtl.do?empmPbancRegSn=1713&curPage=0",
+      "apply_type": "접수페이지",
+      "homepage_url": "",
+      "recruit_type": "NORMAL",
+      "recruit_close_at": "2026-11-20T14:59:59+00:00",
+      "salary_info": "회사 내규에 따름",
+      "address": "서울 중구 청계천로 30",
+      "description_image_urls": "",
+      "description_image_local": "",
+      "logo_url": "https://media-cdn.linkareer.com/activity_manager/logos/984215",
+      "description_text": "",
+      "view_count": 0,
+      "discovered_at": "2026-11-10T00:40:14+00:00"
+    },
     {
       "id": "363160",
       "title": "[삼정KPMG] Deal Adv 3본부 인턴 채용",
